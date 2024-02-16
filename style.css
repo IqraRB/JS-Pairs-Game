@@ -1,0 +1,49 @@
+body{
+background-color: antiquewhite;
+margin: 0;
+
+}
+
+h1, p{
+    text-align: center;
+    font-family: 'Ysabeau SC', sans-serif;
+}
+
+.container{
+    margin: 48px auto;
+    width: max-content;
+    grid-template-columns:repeat(4, 150px) ;
+    display: grid;
+    gap: 16px;
+}
+
+.card {
+    height: 150px;
+    cursor: pointer;
+    border: 5px solid #4444 ;
+    background-color: black;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+  }
+
+ img{
+    transform: translateX(-100%) rotateY(-180deg);
+  }
+
+.resetbtn{
+    display: flex;
+    justify-content: center;
+}
+
+ button{
+    font-family: 'Ysabeau SC', sans-serif;
+    background-color:firebrick;
+    color: antiquewhite; 
+    border: none;
+    justify-content: center;
+    align-items: flex-end;
+    height: 30px;
+    width: 100px;
+} 
+
