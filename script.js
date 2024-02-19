@@ -1,5 +1,5 @@
 
-let P = document.getElementById('Gameplan');
+let P = document.getElementById('gameplan');
 P.innerHTML = `Match the Famous Duo's`;
 
 let cardsContainer = document.querySelector('.container'); //we use query selector here as opposed to getElementsByClassName, this grabs the first element, with the class container we want to work on.  Note: if I used QuerySelectorAll, that would connect to all(if more than one) elements with the class of container.  
@@ -11,7 +11,7 @@ const characters = [
     },
     {
         name: 'chucklebrothers',
-        img: 'images/paul.jpg'
+        img: 'images/paul.jpeg'
     },
     {
         name: 'TomandJerry',
@@ -43,7 +43,7 @@ const characters = [
     },
     {
         name: 'Nemo',
-        img: 'images/nemo.jpg'
+        img: 'images/nemo.jpeg'
     },
     {
         name: 'HarryPotter',

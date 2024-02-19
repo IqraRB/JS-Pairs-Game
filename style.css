@@ -1,24 +1,31 @@
-body{
+html, body{
 background-color: antiquewhite;
 margin: 0;
-
+font-family: 'Ysabeau SC', sans-serif;
+text-align: center;
+min-height: 100vh;
 }
 
-h1, p{
-    text-align: center;
-    font-family: 'Ysabeau SC', sans-serif;
+h1{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.gameplan{
+    font-size: 1.5em;
 }
 
 .container{
-    margin: 48px auto;
+    margin: 0 auto;
+    padding: 1em;
     width: max-content;
-    grid-template-columns:repeat(4, 150px) ;
     display: grid;
+    grid-template-columns:repeat(4, 175px) ;
     gap: 16px;
 }
 
 .card {
-    height: 150px;
+    height: 175px;
     cursor: pointer;
     border: 5px solid #4444 ;
     background-color: black;
@@ -29,6 +36,8 @@ h1, p{
 
  img{
     transform: translateX(-100%) rotateY(-180deg);
+    max-width: 100%;
+    height: auto;
   }
 
 .resetbtn{
@@ -43,7 +52,8 @@ h1, p{
     border: none;
     justify-content: center;
     align-items: flex-end;
-    height: 30px;
+    height: 40px;
     width: 100px;
+    padding: 0%;
 } 
 
