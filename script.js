@@ -43,7 +43,7 @@ const characters = [
     },
     {
         name: 'Nemo',
-        img: 'images/nemo.jpeg'
+        img: 'images/nemo.jpg'
     },
     {
         name: 'HarryPotter',
