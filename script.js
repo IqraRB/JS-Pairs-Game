@@ -7,51 +7,63 @@ let cardsContainer = document.querySelector('.container'); //we use query select
 const characters = [
     {
         name: 'chucklebrothers',
-        img: 'images/barry.jpg'
+        img: 'images/barry.jpg',
+        position:"center"
     },
     {
         name: 'chucklebrothers',
-        img: 'images/paul.jpeg'
+        img: 'images/paul.jpeg',
+        position:"center"
     },
     {
         name: 'TomandJerry',
-        img: 'images/tom.jpg'
+        img: 'images/tom.jpg',
+        position:"center", 
     },
     {
         name: 'TomandJerry',
-        img: 'images/jerry.png'
+        img: 'images/Jerry.png',
+        position:"center"
     },
     {
         name: 'Bobthebuilder',
-        img: 'images/bob.jpg'
+        img: 'images/bob.jpg',
+        position:""
     },
     {
         name: 'Bobthebuilder',
-        img: 'images/wendy.jpg'
+        img: 'images/wendy.jpg',
+        position:""
     },
     {
         name: 'shrek',
-        img: 'images/shrek.jpg'
+        img: 'images/shrek.jpg',
+        position:""
     },
     {
         name: 'shrek',
-        img: 'images/donkey.jpg'
+        img: 'images/donkey.jpg',
+        position:""
     },
     {
         name: 'Nemo',
-        img: 'images/dory.jpg'
+        img: 'images/dory.jpg',
+        position:""
     },
     {
         name: 'Nemo',
-        img: 'images/nemo.jpg'
+        img: 'images/nemo2.jpeg',
+        position:"bottom"
     },
     {
         name: 'HarryPotter',
-        img: 'images/harry.jpg'
+        img: 'images/harry.jpg',
+        position:""
     },
     {
         name: 'HarryPotter',
-        img: 'images/voldemort.jpg'
+        img: 'images/voldemort.jpg',
+        position:"center"
     }];
     console.log(characters);
 
@@ -60,9 +72,9 @@ const characterCount = characters.length;
 //we use this down below in the for loop, we could also use the condition i<12 (as 12 is our no of tiles)
 
 // variables that indicate the current state of the game  
-let revealedCount = 0; //meaning starting with 0 tiles revelaed. 
-let activeCard = null; //refers to the tile the user has just clicked on, thus is active. and refferes to the DIV itself. 
-let awaitingEndOfMove = false; // if set to true, means the user is wait for the unmatched tiles to turn over again. 
+let revealedCount = 0; //means start with 0 tiles revealed. 
+let activeCard = null; //refers to the tile the user has just clicked on, thus is active. and referes to the DIV itself. 
+let awaitingEndOfMove = false; // if set to true, means the user is waiting for the unmatched tiles to turn over again. 
 
 // binding an event to an element 
 function buildCard(character){
@@ -82,10 +94,11 @@ function buildCard(character){
             || revealed === 'true'
             || element === activeCard //if clicking on the same tile twice, return and cancel the move
             ) {
-            return; //this section says that if the cards do not match, dont proceed any further in the gaem or code, thus return(stop code from processing further)
+            return; //this section says that if the cards do not match, don't proceed any further in the game or code, thus return(stop code from processing further)
         }
-        // here we say if not awaiting end of move as the cards have matched, reveal the card =. 
-        element.style.backgroundImage = `url('${character.img}')` ;
+        // here we say if not awaiting end of move as the cards have matched, reveal the card. 
+        // element.style.backgroundImage = `url('${character.img}')` ;
+        element.style.background = `url('${character.img}') ${character.position}` ;
          console.log(element);
 
         if (!activeCard) {

@@ -40,8 +40,8 @@ h1{
 
 img{
     transform: translateX(-100%) rotateY(-180deg);
-    max-width: 100%;
-    height: auto;
+    max-width: fit-content;
+    height:fit-content ;
   }
 
 .resetbtn{
@@ -62,5 +62,15 @@ img{
 } 
 
 @media (max-width: 600px){
-.wrapper{text-align: center;}
-} 
+
+ .container{
+    margin: 0 5%;
+    grid-template-columns:repeat(4, 22%) ;
+    width: 80%;
+    }
+
+.card {
+    height: 58px;
+  }
+
+}
