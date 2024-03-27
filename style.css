@@ -40,8 +40,8 @@ h1{
 
 img{
     transform: translateX(-100%) rotateY(-180deg);
-    max-width: fit-content;
-    height:fit-content ;
+    max-width:100%;
+    height:100% ;
   }
 
 .resetbtn{
