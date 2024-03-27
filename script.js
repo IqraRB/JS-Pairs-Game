@@ -8,62 +8,74 @@ const characters = [
     {
         name: 'chucklebrothers',
         img: 'images/barry.jpg',
-        position:"center"
+        position:"center",
+        color:"black"
     },
     {
         name: 'chucklebrothers',
         img: 'images/paul.jpeg',
-        position:"center"
+        position:"center",
+        color:"black"
     },
     {
         name: 'TomandJerry',
         img: 'images/tom.jpg',
         position:"center", 
+        color:"black"
     },
     {
         name: 'TomandJerry',
         img: 'images/Jerry.png',
-        position:"center"
+        position:"center",
+        color:"black"
     },
     {
         name: 'Bobthebuilder',
         img: 'images/bob.jpg',
-        position:""
+        position:"",
+        color:"black"
     },
     {
         name: 'Bobthebuilder',
         img: 'images/wendy.jpg',
-        position:""
+        position:"",
+        color:"black"
     },
     {
         name: 'shrek',
         img: 'images/shrek.jpg',
-        position:""
+        position:"",
+        color:"black"
     },
     {
         name: 'shrek',
         img: 'images/donkey.jpg',
-        position:""
+        position:"",
+        color:"black"
     },
     {
         name: 'Nemo',
         img: 'images/dory.jpg',
-        position:""
+        position:"",
+        color:"black"
     },
     {
         name: 'Nemo',
         img: 'images/nemo2.jpeg',
-        position:"bottom"
+        position:"bottom",
+        color:"black"
     },
     {
         name: 'HarryPotter',
         img: 'images/harry.jpg',
-        position:""
+        position:"",
+        color:"black"
     },
     {
         name: 'HarryPotter',
         img: 'images/voldemort.jpg',
-        position:"center"
+        position:"center",
+        color:"black"
     }];
     console.log(characters);
 
@@ -98,7 +110,7 @@ function buildCard(character){
         }
         // here we say if not awaiting end of move as the cards have matched, reveal the card. 
         // element.style.backgroundImage = `url('${character.img}')` ;
-        element.style.background = `url('${character.img}') ${character.position}` ;
+        element.style.background = `url('${character.img}') ${character.position} ${character.color}` ;
          console.log(element);
 
         if (!activeCard) {

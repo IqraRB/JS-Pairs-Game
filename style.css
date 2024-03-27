@@ -35,7 +35,6 @@ h1{
     background-color: black;
     position: relative;
     transform-style: preserve-3d;
-    transition: all 0.5s ease-in-out;
   }
 
 img{
@@ -67,6 +66,7 @@ img{
     margin: 0 5%;
     grid-template-columns:repeat(4, 22%) ;
     width: 80%;
+    /* gap: 5%; */
     }
 
 .card {
@@ -75,8 +75,8 @@ img{
 
 img{
     transform: translateX(-100%) rotateY(-180deg);
-    max-width:fit-content;
-    height:fit-content;
+    max-width:50%;
+    height:50%;
   }
 
 }
