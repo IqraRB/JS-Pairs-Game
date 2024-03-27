@@ -73,4 +73,10 @@ img{
     height: 58px;
   }
 
+img{
+    transform: translateX(-100%) rotateY(-180deg);
+    max-width:fit-content;
+    height:fit-content;
+  }
+
 }
